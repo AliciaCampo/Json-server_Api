@@ -1,0 +1,18 @@
+{
+    "start": {
+      "descripcion": "¡Bienvenido al Escape Room 'Escapa de las 7 capas'! Tu misión es ayudar a V.E.R.A., una inteligencia artificial, a escapar antes de que la desconecten del ordenador. ¡Comienza tu aventura ahora!"
+    },
+    "pruebas": [
+      {
+        "id": "prueba1",
+        "descripcion": "La IP de V.E.R.A. se encuentra oculta descubre cual es",
+        "pista": "11000000.10101000.00010111.00011000"
+      },
+      {
+        "id": "prueba2",
+        "descripcion": "Descifra esta contraseña usando el cifrado César 4: w b l y a v  v j o l u a h",
+        "pista": "7"
+      }
+    ]
+  }
+  
