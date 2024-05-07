@@ -5,14 +5,38 @@
     "pruebas": [
       {
         "id": "prueba1",
-        "descripcion": "La IP de V.E.R.A. se encuentra oculta descubre cual es",
+        "descripcion": "La IP de V.E.R.A. se encuentra oculta. Descubre cual es",
         "pista": "11000000.10101000.00010111.00011000"
       },
       {
         "id": "prueba2",
-        "descripcion": "Descifra esta contraseña usando el cifrado César 4: w b l y a v  v j o l u a h",
-        "pista": "7"
+        "descripcion": "Descifra esta contraseña usando el cifrado César 4: c h r e g b b p u r a g h",
+        "pista": "Cuenta"
+      },
+      {
+        "id": "prueba3",
+        "descripcion": "Estas en la DMZ y necesitas actualizar los datos para poder salir, encuentra la comanda correcta (estas en un linux)",
+        "pista": "ip"
+      },
+      {
+        "id": "prueba4",
+        "descripcion": "Te encuentras una listas de palabras, estas tienen relacion, para poder pasar esta prueba debes de la palabra que no tenga nada que ver",
+        "pista": ""
+      },
+      {
+        "id": "prueba5",
+        "descripcion": "",
+        "pista": ""
+      },
+      {
+        "id": "prueba6",
+        "descripcion": "",
+        "pista": ""
+      },
+      {
+        "id": "prueba7",
+        "descripcion": "",
+        "pista": ""
       }
     ]
-  }
-  
+  } 
