@@ -20,7 +20,15 @@
   "prueba4": {
       "id": "prueba4",
       "descripcion": "Te encuentras una listas de palabras, todas tienen relacion, menos una encuentrala para poder pasar esta prueba",
-      "palabras": ["RAM", "bios", "Disco Duro", "CPU", "Drivers", "GPU", "Perifèricos", "PSU", "Placa Base"]
+      "palabra1" :"RAM", 
+      "palabra2" :"BIOS",
+      "palabra3" :"Disco Duro",
+      "palabra4" :"CPU", 
+      "palabra5" :"Drivers",
+      "palabra6 ":"GPU",
+      "palabra7" :"Perifèricos", 
+      "palabra8" :"PSU", 
+      "palabra9" : "Placa Base"
   },
   "prueba5": {
       "id": "prueba5",
