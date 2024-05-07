@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+20+Charted&display=swap');
 
 body {
   font-family: "Jersey 20";
@@ -28,9 +29,6 @@ body {
   text-align: center;
 }
 
-.respuesta {
-  font-family: Montserrat;
-}
 
 h1 {
   text-align: center;
@@ -53,7 +51,8 @@ h2 {
 
 
 #descripcion {
-  font-weight: bold;
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-size: 25px;
 }
 
 input[type="text"] {
@@ -198,4 +197,10 @@ button:disabled {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+/* Establece el tamaño de la letra para el placeholder del input */
+input[type="text"]::placeholder {
+  font-size: 14px;
+  font-family: "Jersey 20";
 }

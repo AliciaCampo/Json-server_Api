@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pruebas = [
       {
         id: "prueba1",
-        descripcion: "La IP de V.E.R.A. se encuentra oculta descubre cuál es",
+        descripcion: "La IP de V.E.R.A. se encuentra oculta descubre cuál es...",
         respuesta: "192.168.23.24"
       },
       {
