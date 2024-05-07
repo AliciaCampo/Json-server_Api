@@ -1,121 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-image: url('ping.png');
-  background-size:auto;
+  font-family: "Jersey 20";
+  background-image: url(https://static.vecteezy.com/system/resources/previews/025/517/968/non_2x/technology-background-blue-glow-light-abstract-digital-graphic-design-wallpaper-cpu-or-gpu-motherboard-chip-generative-ai-photo.jpg);
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
+  margin: 500px;
   padding: 0;
 }
 
-  
-  
-  .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Ancho del contenedor */
-    max-width: 800px; /* Ancho máximo del contenedor */
-    padding: 40px; /* Margen interno */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /* Ancho del contenedor */
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+  padding: 40px;
+  /* Margen interno */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  text-align: center;
+}
+
+.respuesta {
+  font-family: Montserrat;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Tamaño apartados */
+
+#pista {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+#descripcion {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+#navegacion {
+  text-align: center;
+}
+
+#anterior,
+#siguiente {
+  margin: 0 10px;
+}
+
+/* Estilos para la ventana emergente */
+.ventana-emergente {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semi-transparente */
+  z-index: 9999;
+  /* Por encima de todo */
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-ventana {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #f988ff 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #bc4ed8 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #7f00b2 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, #4c007d 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, #1b004b 40px -40px;
+  text-align: center;
+  /* Para centrar el contenido */
+}
+
+.contenido-ventana button {
+  display: block;
+  /* Para ocupar todo el ancho disponible */
+  margin: 0 auto;
+  /* Para centrar horizontalmente */
+}
+
+.contenido-ventana h2 {
+  margin-top: 0;
+}
+
+.contenido-ventana p {
+  margin-bottom: 20px;
+}
+
+.contenido-ventana button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+/* Boton */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 15px;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #f988ff,
+      #bc4ed8,
+      #7f00b2,
+      #4c007d,
+      #1b004b,
+      #11002f,
+      #1b004b,
+      #4c007d,
+      #7f00b2,
+      #bc4ed8,
+      #f988ff
+      );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
   }
-  
-  h1 {
-    text-align: center;
-    color: #333;
+
+  50% {
+    background-position: 400% 0;
   }
-  
-  h2 {
-    color: #333;
+
+  100% {
+    background-position: 0 0;
   }
-  
-  #pista {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  
-  #descripcion {
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  #navegacion {
-    text-align: center;
-  }
-  
-  #anterior,
-  #siguiente {
-    margin: 0 10px;
-  }
-  
-  /* Estilos para la ventana emergente */
-  .ventana-emergente {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    z-index: 9999; /* Por encima de todo */
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contenido-ventana {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Para centrar el contenido */
-  }
-  
-  .contenido-ventana button {
-    display: block; /* Para ocupar todo el ancho disponible */
-    margin: 0 auto; /* Para centrar horizontalmente */
-  }
-    
-  .contenido-ventana h2 {
-    margin-top: 0;
-  }
-  
-  .contenido-ventana p {
-    margin-bottom: 20px;
-  }
-  
-  .contenido-ventana button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
