@@ -69,8 +69,8 @@
           "camino": [
             { "opcion": "1", "solucion": "", "idSolucion": "incorrecto :(" },
             { "opcion": "2", "solucion": "", "idSolucion": "incorrecto :(" },
-            { "opcion": "3", "solucion": "🔥", "idSolucion": "correcto :)" },
-            { "opcion": "4", "solucion": "️️⌨️", "idSolucion": "incorrecto :(, has acabado en el microondas" }
+            { "opcion": "3", "solucion": "🔥🧱", "idSolucion": "correcto :)" },
+            { "opcion": "4", "solucion": "️️🎧📠📺", "idSolucion": "incorrecto :(, has acabado en el microondas" }
           ],
           "pista": ""
         }
