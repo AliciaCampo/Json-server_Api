@@ -54,7 +54,7 @@
     "prueba5": {
         "id": "prueba5",
         "descripcion": "Encuentra la palabra oculta relacionada con la palabra información",
-        "pista": "Empieza por D y acaba con O"
+        "pista": "La información"
     },
     "prueba6": {
         "id": "prueba6",
@@ -67,8 +67,8 @@
           "texto": "Elige el camino correcto para encontrar lo que necesitas...",
           
           "camino": [
-            { "opcion": "1", "solucion": "", "idSolucion": "incorrecto :(" },
-            { "opcion": "2", "solucion": "", "idSolucion": "incorrecto :(" },
+            { "opcion": "1", "solucion": "🎙️🎛️🎚️", "idSolucion": "incorrecto :( Has acabado a la radio" },
+            { "opcion": "2", "solucion": "🛰️🛥️", "idSolucion": "incorrecto :( Has acabado en el barco del jardín" },
             { "opcion": "3", "solucion": "🔥🧱", "idSolucion": "correcto :)" },
             { "opcion": "4", "solucion": "️️🎧📠📺", "idSolucion": "incorrecto :(, has acabado en el microondas" }
           ],
@@ -77,12 +77,12 @@
     },
     "prueba8": {
         "id": "prueba8",
-        "descripcion": "",
+        "descripcion": "Se",
         "pista": ""
     },
     "prueba9": {
       "id": "prueba9",
-      "descripcion": "",
+      "descripcion": "Finalmente",
       "pista": ""
     },
     "prueba10": {
