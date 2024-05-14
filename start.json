@@ -4,13 +4,13 @@
     },
     "prueba1": {
         "id": "prueba1",
-        "descripcion": "La IP de V.E.R.A. se encuentra oculta. Descubre cual es",
-        "pista": "El internet es una herramienta invaluable.\n Estoy explorando caminos seguros.\n Web rara, pero útil. \n El acceso es fácil."
+        "descripcion": "¿Qué tipo de archivo sirve para dar estilo a un HTML?",
+        "pista": "external"
     },
     "prueba2": {
         "id": "prueba2",
-        "descripcion": "Descifra esta contraseña usando el cifrado César 4: c h r e g b b p u r a g h",
-        "pista": "Cuenta"
+        "descripcion": "Descifra esta contraseña usando el cifrado César: c h q e g b __ b o t q z g n",
+        "pista": "Cuenta la frase, "
     },
     "prueba3": {
         "id": "prueba3",
@@ -53,8 +53,8 @@
 
     "prueba5": {
         "id": "prueba5",
-        "descripcion": "Encuentra la palabra oculta relacionada con la palabra información",
-        "pista": "La información"
+        "descripcion": "Escribe la palabra oculta",
+        "pista": "La infromación se genera apartir de esto"
     },
     "prueba6": {
         "id": "prueba6",
@@ -71,23 +71,23 @@
             { "opcion": "2", "solucion": "🛰️🛥️", "idSolucion": "incorrecto :( Has acabado en el barco del jardín" },
             { "opcion": "3", "solucion": "🔥🧱", "idSolucion": "correcto :)" },
             { "opcion": "4", "solucion": "️️🎧📠📺", "idSolucion": "incorrecto :(, has acabado en el microondas" }
-          ],
-          "pista": ""
+          ]
         }
     },
     "prueba8": {
         "id": "prueba8",
-        "descripcion": "Se",
+        "descripcion": "Ayuda a VERA a conectarse a la red con rj45",
         "pista": ""
     },
     "prueba9": {
       "id": "prueba9",
-      "descripcion": "Finalmente",
-      "pista": ""
+      "descripcion": "Oh no hay un ataque de DoS, qué puerto tenemos que cerrar?",
+      "pista": "DNS afectado"
     },
-    "prueba10": {
+    "prueba10": {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         "id": "prueba10",
-        "descripcion": "",
+        "descripcion": "La IP de V.E.R.A. se encuentra oculta. Descubre cual es",
+        "descripcion2": "El internet es una herramienta invaluable.\n Estoy explorando caminos seguros.\n Web rara, pero util. \n El acceso es facil.",
         "pista": ""
     }
 }
