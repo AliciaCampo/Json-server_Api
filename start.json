@@ -64,7 +64,7 @@
     "prueba7": {
         "id": "prueba7",
         "descripcion": {
-          "texto": "Elige el camino correcto para encontrar lo que necesitas...",+
+          "texto": "Elige el camino correcto para encontrar lo que necesitas...",
           
           "camino": [
             { "opcion": "1", "solucion": "", "idSolucion": "incorrecto :(" },
@@ -74,13 +74,11 @@
           ],
           "pista": ""
         }
-    }
+    },
     "prueba8": {
         "id": "prueba8",
-        "descripcion": "Elige la opción correcta: 123
-                                                  149
-                                                  ?????",
-        "pista": "x^2"
+        "descripcion": "",
+        "pista": ""
     },
     "prueba9": {
       "id": "prueba7",
