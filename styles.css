@@ -55,6 +55,11 @@ h2 {
   font-size: 25px;
 }
 
+.link{
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-size: 25px;
+}
+
 input[type="text"] {
   width: 100%;
   padding: 10px;
