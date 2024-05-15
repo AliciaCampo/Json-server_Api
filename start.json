@@ -10,17 +10,17 @@
     "prueba2": {
         "id": "prueba2",
         "descripcion": "Descifra esta contraseña usando el cifrado César: c h q e g b __ b o t q z g n",
-        "pista": "Cuenta la frase, "
+        "pista": "Cuenta el número de letras que hay en la frase. "
     },
     "prueba3": {
         "id": "prueba3",
-        "descripcion": "Estas en la DMZ y necesitas actualizar los datos para poder salir, encuentra la comanda correcta (estas en un linux)",
+        "descripcion": "Estas en la DMZ y necesitas actualizar los datos para poder salir, encuentra la comanda correcta (estás en un linux)",
         "pista": "tables"
     },
     "prueba4": [
         {
             "id": "prueba4",
-            "descripcion": "Te encuentras una listas de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba"
+            "descripcion": "Te encuentras una listas de palabras; todas tienen relación, menos una. Encuentra y elimínala para poder pasar esta prueba"
         },
         {
             "palabra1": "RAM"  
@@ -41,7 +41,7 @@
             "palabra6 ": "GPU"
         },
         {
-            "palabra7": "Perifèricos"
+            "palabra7": "Periféricos"
         },
         {
             "palabra8": "PSU"
@@ -76,8 +76,9 @@
     },
     "prueba8": {
         "id": "prueba8",
-        "descripcion": "Ayuda a VERA a conectarse a la red con rj45",
-        "pista": ""
+        "descripcion": "Un enemigo ha cortado el cable de red. Ayuda a VERA a conectarse a la red con rj45",
+        "orden" : "",
+        "pista": "orden modelo B"
     },
     "prueba9": {
       "id": "prueba9",
@@ -86,8 +87,8 @@
     },
     "prueba10": {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         "id": "prueba10",
-        "descripcion": "La IP de V.E.R.A. se encuentra oculta. Descubre cual es",
-        "descripcion2": "El internet es una herramienta invaluable.\n Estoy explorando caminos seguros.\n Web rara, pero util. \n El acceso es facil.",
+        "descripcion": "La IP de V.E.R.A. se encuentra oculta. Descubre cuál es",
+        "descripcion2": "El internet es una herramienta invaluable.\n Estoy explorando caminos seguros.\n Web rara, pero útil. \n El acceso es fácil.",
         "pista": ""
     }
 }

@@ -9,6 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
         id: "prueba2",
         descripcion: "Descifra esta contraseña usando el cifrado César 4: w b l y a v  v j o l u a h",
         respuesta: "puerto ochenta"
+      },
+      {
+        id: "prueba3",
+        descripcion: "Estas en la DMZ y necesitas actualizar los datos para poder salir, encuentra la comanda correcta (estas en un linux)",
+        respuesta: "..."
+      },
+      {
+        id: "prueba4",
+        descripcion: "Te encuentras una listas de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba",
+        respuesta: "..."
+      },
+      {
+        id: "prueba5",
+        descripcion: "Escribe la palabra oculta",
+        respuesta: "..."
       }
     ];
   
