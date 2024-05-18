@@ -2,29 +2,55 @@ document.addEventListener("DOMContentLoaded", function() {
     const pruebas = [
       {
         id: "prueba1",
-        descripcion: "La IP de V.E.R.A. se encuentra oculta descubre cuál es...",
-        respuesta: "192.168.23.24"
+        descripcion: "Prueba 1 : Escribe tu respuesta con la ayuda del json-server",
+        respuesta: "CSS"
       },
       {
         id: "prueba2",
-        descripcion: "Descifra esta contraseña usando el cifrado César 4: w b l y a v  v j o l u a h",
+        descripcion: "Prueba 2 : Descifra esta contraseña usando el cifrado César",
         respuesta: "puerto ochenta"
       },
       {
         id: "prueba3",
-        descripcion: "Estas en la DMZ y necesitas actualizar los datos para poder salir, encuentra la comanda correcta (estas en un linux)",
-        respuesta: "..."
+        descripcion: "Prueba 3 :Escribe tu respuesta con la ayuda del json-server",
+        respuesta: "iptables"
       },
       {
         id: "prueba4",
-        descripcion: "Te encuentras una listas de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba",
-        respuesta: "..."
+        descripcion: "Prueba 4 :Te encuentras una listas de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba",
+        respuesta: "Drivers"
       },
       {
         id: "prueba5",
-        descripcion: "Escribe la palabra oculta",
+        descripcion: "Prueba 5: Escribe tu respuesta con la ayuda del json-server",
+        respuesta: "datos"
+      },
+      {
+        id: "prueba6",
+        descripcion: "Prueba 6 : Escribe tu respuesta con la ayuda del json-server",
         respuesta: "..."
+      },
+      {
+        id: "prueba7",
+        descripcion: "Prueba 7 : Elige el camino correcto para encontrar lo que necesitas...",
+        respuesta: "3"
+      },
+      {
+        id: "prueba8",
+        descripcion: "Prueba 8 : Un enemigo ha cortado el cable de red. Ayuda a VERA a conectarse a la red con rj45",
+        respuesta: ""
+      },
+      {
+        id: "prueba9",
+        descripcion: "Prueba 9 : Oh no hay un ataque de DoS, qué puerto tenemos que cerrar?",
+        respuesta: "53"
+      },
+      {
+        id: "prueba10",
+        descripcion: "Prueba 10 : Escribe tu respuesta con la ayuda del json-server ",
+        respuesta: "192.168.23.24"
       }
+
     ];
   
     let currentPrueba = 0;

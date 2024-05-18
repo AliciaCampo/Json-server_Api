@@ -4,7 +4,8 @@
 
 body {
   font-family: "Jersey 20";
-  background-image: url(https://static.vecteezy.com/system/resources/previews/025/517/968/non_2x/technology-background-blue-glow-light-abstract-digital-graphic-design-wallpaper-cpu-or-gpu-motherboard-chip-generative-ai-photo.jpg);
+  /*background-image: url(https://static.vecteezy.com/system/resources/previews/025/517/968/non_2x/technology-background-blue-glow-light-abstract-digital-graphic-design-wallpaper-cpu-or-gpu-motherboard-chip-generative-ai-photo.jpg);*/
+  background-image: url("ping.png");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
