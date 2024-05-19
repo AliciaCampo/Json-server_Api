@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       id: "prueba6",
       descripcion: "Escribe tu respuesta con la ayuda del json-server",
-      respuesta: "..."
+      respuesta: "tcp"
     },
     {
       id: "prueba7",
@@ -64,6 +64,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const ventanaEmergente = document.getElementById("ventana-emergente");
   const btnComenzar = document.getElementById("btn-comenzar");
   const ordenarCableado = document.getElementById("ordenar-cableado");
+  const imagenPrueba = document.getElementById("imagen-prueba");
+  const imagen = document.getElementById("imagen");
+  const contador = document.getElementById("contador");
 
   function mostrarPrueba(index) {
     const prueba = pruebas[index];
@@ -72,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     respuestaInput.value = "";
     respuestaInput.style.display = "block";
     ordenarCableado.style.display = "none";
+    imagenPrueba.style.display = "none"; // Ocultar la imagen por defecto
     respuestaInput.focus();
 
     if (index === 0) {
@@ -90,6 +94,10 @@ document.addEventListener("DOMContentLoaded", function() {
       respuestaInput.style.display = "none";
       ordenarCableado.style.display = "block";
       mostrarOrdenarCableado();
+    } else if (index === 9) { // Prueba 10
+      respuestaInput.style.display = "block"; 
+      imagenPrueba.style.display = "block";
+      imagen.src = "prueba10.jpg"; 
     }
   }
 
@@ -112,12 +120,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   let draggedElement;
-
   function handleDragStart(event) {
     draggedElement = event.target;
     event.dataTransfer.effectAllowed = "move";
   }
-
   function handleDragOver(event) {
     event.preventDefault();
     event.dataTransfer.dropEffect = "move";
@@ -139,16 +145,13 @@ document.addEventListener("DOMContentLoaded", function() {
       actualizarOrden();
     }
   }
-
   function actualizarOrden() {
     const cables = Array.from(ordenarCableado.children);
     const orden = cables.map(cable => cable.textContent).join(", ");
     respuestaInput.value = orden;
   }
-
   function validarRespuesta(respuesta) {
     const prueba = pruebas[currentPrueba];
-  
     // Verificar el tipo de prueba
     switch (prueba.id) {
       case "prueba1":
@@ -221,19 +224,38 @@ document.addEventListener("DOMContentLoaded", function() {
     currentPrueba++;
     mostrarPrueba(currentPrueba);
   }
-  
-  
 
+  function iniciarContador() {
+    let tiempoRestante = 60 * 60; // 60 minutos en segundos
+    let tiempoAgotado = false;
+
+    const intervalo = setInterval(() => {
+      const minutos = Math.floor(tiempoRestante / 60);
+      const segundos = tiempoRestante % 60;
+      contador.textContent = `Tiempo restante: ${minutos}:${segundos < 10 ? '0' + segundos : segundos}`;
+      tiempoRestante--;
+
+      if (tiempoRestante < 0) {
+        if (!tiempoAgotado) {
+          tiempoAgotado = true;
+          contador.style.color = "red";
+          tiempoRestante = 1; // Empezar a contar hacia arriba
+        } else {
+          contador.textContent = `Tiempo extra: ${Math.floor(-tiempoRestante / 60)}:${Math.abs(tiempoRestante % 60) < 10 ? '0' + Math.abs(tiempoRestante % 60) : Math.abs(tiempoRestante % 60)}`;
+          tiempoRestante--;
+        }
+      }
+    }, 1000);
+  }
   // Muestra la introducción en la ventana emergente
   ventanaEmergente.style.display = "flex";
-
   // Agrega un evento al botón de inicio en la ventana emergente
   btnComenzar.addEventListener("click", function() {
     // Oculta la ventana emergente y muestra la primera prueba
     ventanaEmergente.style.display = "none";
     mostrarPrueba(currentPrueba);
+    iniciarContador(); // Inicia el contador cuando se hace clic en "Comenzar"
   });
-
   validarBtn.addEventListener("click", function() {
     const respuesta = respuestaInput.value.trim();
     if (respuesta) {
@@ -242,14 +264,12 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Por favor, ingresa una respuesta.");
     }
   });
-
   anteriorBtn.addEventListener("click", function() {
     if (currentPrueba > 0) {
       currentPrueba--;
       mostrarPrueba(currentPrueba);
     }
   });
-
   siguienteBtn.addEventListener("click", function() {
     if (currentPrueba < pruebas.length - 1) {
       currentPrueba++;
