@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       id: "prueba4",
-      descripcion: "Te encuentras una listas de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba",
+      descripcion: "Te encuentras una lista de palabras; todas tienen relacion, menos una. Encuentra y eliminala para poder pasar esta prueba",
       respuesta: "Drivers"
     },
     {
