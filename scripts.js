@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       id: "prueba5",
       descripcion: "Escribe tu respuesta con la ayuda del json-server",
-      respuesta: "datos"
+      respuesta: "dato"
     },
     {
       id: "prueba6",
