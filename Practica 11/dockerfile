@@ -1,0 +1,22 @@
+# Usa una imagen base existente de Node.js
+FROM node:latest
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Instala json-server y http-server globalmente
+RUN npm install -g json-server http-server
+
+# Copia los archivos necesarios al directorio de trabajo
+COPY start.json .
+COPY index.html .
+COPY styles.css .
+COPY script.js .
+COPY ping.png .
+COPY prueba10.jpg .
+
+# Expone los puertos que se van a utilizar
+EXPOSE 3000 8080
+
+# Comando para iniciar tanto json-server como http-server
+CMD ["sh", "-c", "json-server --watch start.json --port 3000 --host 0.0.0.0 & http-server -p 8080"]
