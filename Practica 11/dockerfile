@@ -11,7 +11,7 @@ RUN npm install -g json-server http-server
 COPY start.json .
 COPY index.html .
 COPY styles.css .
-COPY script.js .
+COPY scripts.js .
 COPY ping.png .
 COPY prueba10.jpg .
 
